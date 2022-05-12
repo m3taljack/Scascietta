@@ -18,10 +18,19 @@ public class BoccoJacopoClass
 	
 	public int BoccoMet(int f)
 	{
-		int r=1;
-		for (int i=f;i<0;i++) 
+		/**
+		 * r deve partire da 0
+		 */
+		int r=0;
+		/**
+		 * i deve essere maggiore di 0 perchè altrimenti si ferma subito e poi bisogna decrementare i (i--)
+		 */
+		for (int i=f;i>0;i--) 
 		{
-			r = r*i;	
+			/**
+			 * r deve essere uguale ad r+i
+			 */
+			r = r+i;	
 		}
 		return r;
 	}
